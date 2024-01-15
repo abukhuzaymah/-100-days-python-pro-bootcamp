@@ -1,0 +1,12 @@
+print("Welcome to the tip calculator!")
+bill = input("What was the bill?")
+bill = float(bill)
+tip = input("What was the tip in decimals please?")
+number_customers = input("How many people are paying?")
+number_customers = float(number_customers)
+tip = float(tip)
+tip = tip + 1
+pay_each_person = (bill / number_customers) * tip
+pay_each_person = round(pay_each_person, 2)
+pay_2_each_person = "{:.2f}".format(pay_each_person)
+print(f'What each person needs to pay is £{pay_2_each_person}')
